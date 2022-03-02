@@ -119,10 +119,23 @@ body {
 	max-width: 1490px;
 	width: 98%;
 	margin: 0 auto;
+	overflow-x: scroll;
 }
 .follower {
 	margin: 0 20px;
 }
 .follower img {
 	width: 90px;
+}
+
+.followers::-webkit-scrollbar {
+	width: 12px;
+}
+.followers::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+.followers::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
