@@ -139,3 +139,39 @@ body {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
+
+
+.apps {
+	position: relative;
+	top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+.apps-item {
+	display: flex;
+	width: 30%;
+	height: 120px;
+	background: #fff;
+	border-radius: 5px;
+}
+.apps-item-info {
+	position: relative;
+	top: 15px;
+}
+.apps-item-icon img {
+	width: 110px;
+}
+.apps-item-info-title {
+	font-family: Roboto-Bold;
+	font-size: 22px;
+	color: #333;
+}
+.apps-item-info-category {
+	position: relative;
+	top: 10px;
+	color: #333;
+}
+.apps-item-info-reviews {
+	position: relative;
+	top: 25px;
+}
