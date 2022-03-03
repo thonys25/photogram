@@ -38,12 +38,17 @@ body {
 .posts {
 	margin: 50px auto;
 }
+.post {
+	border: 1px solid #dfdfdf;
+	padding: 15px 15px;
+}
 .post-text {}
 .post-image {
 	position: relative;
 	top: 25px;
 	max-width: 980px;
 	width: 100%;
+	padding: 15px 0;
 }
 .post-image img {
 	width: 100%;
