@@ -42,6 +42,19 @@ body {
 	border: 1px solid #dfdfdf;
 	padding: 15px 15px;
 }
+.post-user {
+	display: flex;
+}
+.post-user-icon {
+	width: 70px;
+}
+.post-user-icon img {
+	width: 100%;
+}
+.post-user-username {
+	position: relative;
+	top: 20px;
+}
 .post-text {}
 .post-image {
 	position: relative;
