@@ -66,6 +66,7 @@ body {
 	font-size: 25px;
 	position: relative;
 	top: 10px;
+	cursor: pointer;
 }
 .post-text {}
 .post-image {
