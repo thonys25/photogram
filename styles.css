@@ -99,9 +99,37 @@ body {
 	align-items: center;
 	padding: 0 15px;
 	text-decoration: none;
+	color: #333;
 }
 .post-options-menu a:hover {
 	background: #f1f1f1;
+}
+.post-options-edit::before {
+	content: '';
+	display: block;
+	width: 15px;
+	height: 15px;
+	background: url('https://img.icons8.com/metro/452/edit.png') no-repeat;
+	background-size: 15px;
+	padding: 0 12px;
+}
+.post-options-remove::before {
+	content: '';
+	display: block;
+	width: 15px;
+	height: 15px;
+	background: url('https://img.icons8.com/metro/452/delete.png') no-repeat;
+	background-size: 15px;
+	padding: 0 12px;
+}
+.post-options-abuse::before {
+	content: '';
+	display: block;
+	width: 15px;
+	height: 15px;
+	background: url('https://img.icons8.com/ios-filled/452/stop-gesture.png') no-repeat;
+	background-size: 15px;
+	padding: 0 12px;
 }
 .post-text {}
 .post-image {
