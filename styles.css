@@ -11,8 +11,8 @@
 	src: url('fonts/OpenSans-Bold.ttf');
 }
 @font-face {
-	font-family: OpenSans-Semibold;
-	src: url('fonts/OpenSans-Semibold.ttf');
+	font-family: OpenSans-SemiBold;
+	src: url('fonts/OpenSans-SemiBold.ttf');
 }
 *,
 *::before,
@@ -25,7 +25,7 @@ body {
 	font-weight: normal;
 }
 .wrapper {
-	max-width: 980px;
+	max-width: 620px;
 	width: 95%;
 	margin: 0 auto;
 }
@@ -33,7 +33,9 @@ body {
 	width: 100%;
 	height: 52px;
 	border: 1px solid #dfdfdf;
-	border-radius: 5px;
+	border-top: none;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 .posts {
 	margin: 50px auto;
@@ -41,6 +43,9 @@ body {
 .post {
 	border: 1px solid #dfdfdf;
 	padding: 15px 15px;
+}
+.post:not(:first-child) {
+	border-top: none;
 }
 .post-wrapper {
 	display: flex;
@@ -57,7 +62,21 @@ body {
 }
 .post-user-username {
 	position: relative;
-	top: 20px;
+	/*top: 20px;*/
+	top: 12px;
+}
+.post-user-username a {
+	color: #333;
+	text-decoration: none;
+}
+.post-box {
+	display: flex;
+	flex-direction: column;
+}
+.post-user-date {
+	font-size: 12px;
+	color: #7d7d7d;
+	margin-top: 15px;
 }
 .post-options {
 	position: relative;
@@ -147,4 +166,81 @@ body {
 }
 .post-image img {
 	width: 100%;
+}
+
+.post-actions {
+	position: relative;
+	top: 5px;
+	width: 100%;
+	height: 50px;
+}
+.post-actions-like {
+	width: 30px;
+	height: 30px;
+	display: block;
+	background: url('https://cdn-icons-png.flaticon.com/512/1077/1077035.png') no-repeat;
+	background-size: 25px;
+	position: absolute;
+	top: 15px;
+	left: 5px;
+	cursor: pointer;
+}
+.post-actions-liked {
+	width: 30px;
+	height: 30px;
+	display: block;
+	background: url('https://cdn-icons-png.flaticon.com/512/1077/1077086.png') no-repeat;
+	background-size: 25px;
+	position: absolute;
+	top: 15px;
+	left: 5px;
+	cursor: pointer;
+}
+.post-actions-comments {
+	width: 30px;
+	height: 30px;
+	display: block;
+	background: url('https://cdn-icons-png.flaticon.com/512/54/54916.png') no-repeat;
+	background-size: 25px;
+	position: absolute;
+	top: 15px;
+	left: 55px;
+	cursor: pointer;
+}
+.post-actions-share {
+	width: 30px;
+	height: 30px;
+	display: block;
+	background: url('https://cdn-icons.flaticon.com/png/512/2550/premium/2550207.png?token=exp=1646307882~hmac=5c817186f80edee227e4fd6cee4f499e') no-repeat;
+	background-size: 25px;
+	position: absolute;
+	top: 15px;
+	left: 105px;
+	cursor: pointer;
+}
+.post-actions-book {
+	width: 30px;
+	height: 30px;
+	display: block;
+	background: url('https://cdn-icons.flaticon.com/png/512/5662/premium/5662990.png?token=exp=1646307886~hmac=4f4f895ce169cc442ddf4a7d796c931f') no-repeat;
+	background-size: 25px;
+	position: absolute;
+	top: 15px;
+	right: 0px;
+	cursor: pointer;
+}
+
+.post-more {
+	position: relative;
+	height: auto;
+	padding-bottom: 10px;
+}
+.post-more-likes {
+	margin-top: 20px;
+}
+.post-more-comments {
+	margin-top: 18px;
+}
+.post-likes {
+	font-family: OpenSans-Bold;
 }
